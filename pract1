@@ -1,0 +1,144 @@
+MyFirstApp.java
+
+package Main;
+public class MyFirstApp{
+    private String name;
+    private int age;
+    public MyFirstApp(String n, int a){
+        name = n;
+        age = a;
+    }
+    public MyFirstApp(String n){
+        name = n;
+        age = 0;
+    }
+    public MyFirstApp(){
+        name = "Mol";
+        age = 0;
+    }
+    public void set_name(String name1) {
+        name = name1;
+    }
+    public void set_age(int age1){
+        age = age1;
+    }
+    public String get_name(){
+        return name;
+    }
+    public int get_age (){
+        return age;
+    }
+    public String ToString(){
+        return name + ": " + age;
+    }
+    public void intoHumanAge(){
+        System.out.println( name + "'s age in human " + age*7 + " years");
+    }
+
+}
+
+TestDog.java
+
+package Main;
+public class TestDog {
+    public static void main (String[] args){
+        MyFirstApp D1 = new MyFirstApp ("Mike ", 7);
+        MyFirstApp D2 = new MyFirstApp ("Val ", 2);
+        D2.set_age(10);
+        System.out.println(D2.ToString());
+        D1.intoHumanAge();
+    }
+
+}
+
+MyFirstApp.java
+
+package Main;
+public class MyFirstApp{
+    private String company;
+    private String color;
+    public MyFirstApp(String n, String a){
+        company = n;
+        color = a;
+    }
+    public MyFirstApp(){
+        company = "Melan";
+        color = "Yellow";
+    }
+    public void set_company(String company1) {
+        company = company1;
+    }
+    public void set_color(String color1){
+        color = color1;
+    }
+    public String get_company(){
+        return company;
+    }
+    public String get_color (){
+        return color;
+    }
+    public String ToString(){
+        return company + ": " + color;
+    }
+
+}
+
+TestBall.java
+
+package Main;
+public class TestBall {
+    public static void main (String[] args){
+        MyFirstApp D1 = new MyFirstApp ("Adidas ", "gold");
+        MyFirstApp D2 = new MyFirstApp ("Nike ", "red");
+        D2.set_color("Black");
+        System.out.println(D2.ToString());
+        D1.set_company("Puma");
+        System.out.println(D1.ToString());
+    }
+}
+
+MyFirstApp.java
+
+package Main;
+public class MyFirstApp{
+    private String BookName;
+    private String Avtor;
+    public MyFirstApp(String n, String a){
+        BookName = n;
+        Avtor = a;
+    }
+    public MyFirstApp(){
+        BookName = "Crime and Punishment";
+        Avtor = "Fyodor Dostoevsky";
+    }
+    public void setBookName(String BookName1) {
+        BookName = BookName1;
+    }
+    public void setAvtor(String Avtor1){
+        Avtor = Avtor1;
+    }
+    public String get_BookName(){
+        return BookName;
+    }
+    public String getAvtor(){
+        return Avtor;
+    }
+    public String ToString(){
+        return BookName + ": " + Avtor;
+    }
+
+}
+
+TestBook.java
+
+package Main;
+public class TestBook {
+    public static void main (String[] args){
+        MyFirstApp D1 = new MyFirstApp ("Idiot", "Fyodor Dostoyevsky");
+        MyFirstApp D2 = new MyFirstApp ("Student", "Pishkin");
+        D2.setBookName("Demons");
+        System.out.println(D2.ToString());
+        D1.setAvtor("Griboedov");
+        System.out.println(D1.ToString());
+    }
+}
